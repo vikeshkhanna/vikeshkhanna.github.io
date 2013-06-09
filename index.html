@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Vikesh's Home</title>
+	<link href="assets/css/main.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/mosaic/js/mosaic.1.0.1.min.js"></script>
+		
+<script type="text/javascript">
+
+$(document).ready(function($){
+	
+	$('.cover2').mosaic({
+		animation:'slide',	//fade or slide
+		anchor_y:'top',		//Vertical anchor position
+		hover_y	:'80px'		//Vertical position on hover
+		});
+});
+
+</script>
+
+<style type="text/css">
+
+body
+{
+	background-color:#E61919;
+}
+
+html
+{
+	background-image:url(assets/img/home.jpg);
+	background-size:cover;
+}
+
+#overlay
+{
+	background-color:#002852;
+}
+
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="overlay"></div>
+		<div id="menu">
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li>/</li>
+				<li><a href="/projects.html">Projects</a></li>
+				<li>/</i>
+				<li><a href="/music.html">Music</a></li>
+				<li>/</li>
+				<li><a href="/contact.html">Contact</a></li>
+			</ul>
+		</div>
+	
+		<div id="container-inner">
+			<div>
+				<h1 class="h-nobold highlight">Vikesh Khanna</h1>	
+				<span class="subtext">Stanford University</span>
+			</div>
+
+			<div style="margin-top:50px;">
+				<h3 class="h-bold">Past</h3>
+				<span class="subtext">Microsoft, IIT Roorkee</span>
+			</div>
+
+			<div style="margin-top:200px;">
+				<h1 class="h-nobold"><strong>Hi</strong>, I'm a <span class="highlight">Computer Science</span> graduate student at <span class="highlight">Stanford</span></h1>
+			</div>
+			</div>
+		</div>
+	
+		<div id="footer">
+			<ul>
+			<li><a target="_blank" href="/downloads/resume.pdf">Resume'</a></li>
+			<li><a target="_blank" href="http://www.github.com/vikeshkhanna">GitHub</a></li>	
+			<li><a target="_blank" href="http://linkedin.com/vikeshkhanna">LinkedIn</a></li>
+			<li><a target="_blank" href="http://quora.com/vikesh-khanna">Quora</a></li>
+			<li><a target="_blank" href="http://facebook.com/vikeshkhanna">Facebook</a></li>
+			<li><a target="_blank" href="http://twitter.com/vikeshkhanna">Twitter</a></li>
+			<li><a target="_blank" href="http://youtube.com/vikeshkhanna">YouTube</a></li>
+			<li><a target="_blank" href="htt://shelfari.com/vikeshkhanna">Shelfari</a></li>
+			</ul>	
+		</div>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Vikesh's Home</title>
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="assets/capty/css/jquery.capty.css"/>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/capty/js/jquery.capty.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	var $kids = $("#project-box").children().find("img");
+	
+	for(var i=0; i<$kids.length; ++i)
+	{
+		$("#" + $kids[i].id).capty({
+			height:55,
+			opacity:0.8
+		});
+	}		
+});
+
+</script>
+
+<style type="text/css">
+
+body
+{
+	background-color:#E61919;
+}
+
+html
+{
+	background-image:url(assets/img/projects.jpg);
+	background-size:cover;
+}
+
+#overlay
+{
+	background-color:#363636;
+}
+
+#project-box
+{
+	background-color:black;
+	padding:20px;
+	opacity:0.75;
+	max-width:1150px;
+}
+
+#project-box img
+{
+	width:175px;
+	height:175px;
+}
+
+#project-box ul li
+{
+	padding-right:15px;
+	padding-top:15px;
+	width:175px;
+}
+
+div.capty-caption
+{
+	width:175px;
+}
+
+.highlight
+{
+	font-size:14px;
+	opacity:0.95;
+}
+
+.maintained
+{
+	margin-left:8px;
+	background-color:#FFF700;
+	color:black;
+}
+
+.deprecated
+{
+	margin-left:8px;
+	background-color:red;
+	color:white;
+}
+
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="overlay"></div>
+		<div id="menu">
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li>/</li>
+				<li><a class="active" href="/projects.html">Projects</a></li>
+				<li>/</i>
+				<li><a href="/music.html">Music</a></li>
+				<li>/</li>
+				<li><a href="/contact.html">Contact</a></li>
+			</ul>
+		</div>
+	
+		<div id="container-inner">
+			<h1 class="h-nobold">I drew a <strong>line</strong>.</h1>
+			<div id="project-box">
+			<ul>
+				<li>
+				<div>
+				<span class="highlight maintained">YouTurn</span>	
+				<img id="youturn" src="content/projects/youturn.png" name="#youturn-target" />
+		
+				<div id="youturn-target">
+					<span>Chrome Extension</span><br />
+					<a href="https://github.com/vikeshkhanna/youturn" target="_blank">Source</a> | <a href="https://chrome.google.com/webstore/detail/youturn/icphmmimmfdlgaaglejeokffekamhplg" target="_blank">Chrome Store</a>
+				</div>
+				</div> 	
+				</li>
+
+				<li>
+				<div>
+				<span class="highlight maintained">Quorum</span>
+				<img id="qourum" src="content/projects/quorum.png" name="#quorum-target" />
+		
+				<div id="quorum-target">
+					<span>Chrome Extension</span><br />
+					<a href="https://github.com/vikeshkhanna/quorum" target="_blank">Source</a> | <a href="https://chrome.google.com/webstore/detail/quorum/kimliambpaecfodnddngocobmeojgkke" target="_blank">Chrome Store</a>
+				</div> 	
+				</div>
+				</li>
+				
+				<li>
+				<div>
+					<span class="highlight maintained">NewSpeak</span>
+				<img id="newspeak" src="content/projects/newspeak.jpg" name="#newspeak-target" />
+		
+				<div id="newspeak-target">
+					<span>Chrome Extension</span><br />
+					<a href="https://github.com/vikeshkhanna/newspeak" target="_blank">Source</a> | <a href="https://chrome.google.com/webstore/detail/newspeak/gnppbcibfbaammpmmonmnelpodcokaik" target="_blank">Chrome Store</a>
+				</div> 
+				</div>	
+				</li>
+				
+				<li>
+				<div>
+				<span class="highlight maintained">Kris Gethin 12 week</span>
+				<img id="kg12" src="content/projects/kg12.jpg" name="#kg12-target" />
+		
+				<div id="kg12-target">
+					<span>Windows Phone app</span><br />
+					<a href="https://github.com/vikeshkhanna/kg12" target="_blank">Source</a> | <a href="http://www.windowsphone.com/en-us/store/app/kris-gethin-12-week/22668fd7-c672-4f21-9866-aceddbc8f8d1" target="_blank">Windows Phone Store </a>
+				</div> 
+				</div>	
+				</li>
+				
+				<li>
+				<div>
+				<span class="highlight maintained">TDKR Countdown</span>
+				<img id="legend" src="content/projects/legend.jpg" name="#legend-target" />
+		
+				<div id="legend-target">
+					<span>The Dark Knight Rises Countdown</span><br />
+					<a href="https://github.com/vikeshkhanna/legend" target="_blank">Source</a> | <a href="http://stanford.edu/~vikesh/projects/legend/" target="_blank">Demo</a>
+				</div> 
+				</div>	
+				</li>
+				
+				<li>
+				<div>
+				<span class="highlight deprecated">Heartbreaker</span>
+				<img id="heartbreaker" src="content/projects/fb_app.jpg" name="#heartbreaker-target" />
+		
+				<div id="heartbreaker-target">
+					<span>Facebook app</span><br />
+					<a href="https://github.com/vikeshkhanna/heartbreaker" target="_blank">Source</a> | <a href="http://sourceforge.net/projects/heartbreakerfbn/?source=dlp" target="_blank">Download</a>
+				</div> 
+				</div>	
+				</li>
+
+				<li>
+				<div>
+				<span class="highlight maintained">EDC IITR Website</span>
+				<img id="edciitr" src="content/projects/edciitr.jpg" name="#edciitr-target" />
+		
+				<div id="edciitr-target">
+					<span>Django Website</span><br />
+					<a href="https://github.com/vikeshkhanna/EDC-Website" target="_blank">Source</a> | <a href="http://edciitr.com" target="_blank">Site</a>
+				</div> 
+				</div>	
+				</li>
+				
+				<li>
+				<div>
+				<span class="highlight maintained">XMark</span>
+				<img id="xmark" src="content/projects/xmark.jpg" name="#xmark-target" />
+		
+				<div id="xmark-target">
+					<span>Machine Learning</span><br />
+					<a href="https://github.com/vikeshkhanna/xmark/" target="_blank">Source</a> 
+				</div> 
+				</div>	
+				</li>
+				
+				<li>
+				<div>
+				<span class="highlight maintained">Evermore</span>
+				<img id="evemore" src="content/projects/evermore.jpg" name="#evermore-target" />
+		
+				<div id="evermore-target">
+					<span>Windows Desktop Application</span><br />
+					<a href="https://github.com/vikeshkhanna/evermore" target="_blank">Source</a> 
+				</div> 
+				</div>	
+				</li>
+			</ul>
+			
+			<div style="float:right;">
+				<span style="margin-left:0px;" class="highlight maintained">Maintained</span>
+				<span class="highlight deprecated">Deprecated</span>
+			</div>
+		
+			<div style="margin-top:0px;">
+				<span>More on <a style="color:yellow" target="_blank" href="http://github.com/vikeshkhanna/">GitHub</a></span>
+			</div>
+		</div>
+		
+			
+		</div>
+	
+		<div id="footer">
+			<ul>
+			<li><a target="_blank" href="/downloads/resume.pdf">Resume'</a></li>
+			<li><a target="_blank" href="http://www.github.com/vikeshkhanna">GitHub</a></li>	
+			<li><a target="_blank" href="http://linkedin.com/vikeshkhanna">LinkedIn</a></li>
+			<li><a target="_blank" href="http://quora.com/vikesh-khanna">Quora</a></li>
+			<li><a target="_blank" href="http://facebook.com/vikeshkhanna">Facebook</a></li>
+			<li><a target="_blank" href="http://twitter.com/vikeshkhanna">Twitter</a></li>
+			<li><a target="_blank" href="http://youtube.com/vikeshkhanna">YouTube</a></li>
+			<li><a target="_blank" href="htt://shelfari.com/vikeshkhanna">Shelfari</a></li>
+			</ul>	
+		</div>
+	</div>
+</body>
+</html>
+
