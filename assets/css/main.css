@@ -58,7 +58,6 @@ a:hover
 
 #container-inner div
 {
-	float:left;
 	clear:both;
 }
 	
@@ -100,6 +99,16 @@ a:visited
 	background-color:#BA0000;
 	opacity:0.75;
 }
+
+.box
+{
+	float:left;
+	margin: 0px 15px 12px 0px;
+	padding:5px 15px 8px 15px;
+	background-color:black;
+	opacity:0.85;
+}
+
 
 .subtext
 {
