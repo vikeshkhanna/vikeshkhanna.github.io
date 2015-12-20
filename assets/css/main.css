@@ -28,6 +28,10 @@ ul li
 	padding:5px 25px 5px 0px;
 }
 
+ul.newline li {
+    float:none;
+}
+
 a
 {
 	text-decoration:none;
@@ -126,3 +130,4 @@ a:visited
 	font-weight:normal;
 	margin:0px 0px 8px 0px;	
 }
+
